@@ -1,0 +1,986 @@
+Checking BFPP/Transfer.lean
+Checking BFPP/Suprema.lean
+Checking BFPP/BoundedFamilies.lean
+BFPP/BoundedFamilies.lean:43:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/BoundedFamilies.lean:58:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/BoundedFamilies.lean:64:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/Envelopes.lean
+BFPP/Envelopes.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Envelopes.lean:39:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Envelopes.lean:63:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Envelopes.lean:76:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/Profiles.lean
+BFPP/Profiles.lean:67:20: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Profiles.lean:75:20: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Profiles.lean:77:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Profiles.lean:92:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Profiles.lean:93:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Profiles.lean:93:41: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Profiles.lean:118:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+BFPP/Profiles.lean:120:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Profiles.lean:121:40: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Profiles.lean:135:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Profiles.lean:137:29: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Profiles.lean:156:44: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+Checking BFPP/ProfileGeometry.lean
+BFPP/ProfileGeometry.lean:49:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/ProfileGeometry.lean:98:10: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+Checking BFPP/Center.lean
+Checking BFPP/TwoProfiles.lean
+Checking BFPP/TwoProfileGeometry.lean
+Checking BFPP/ContinuousBall.lean
+BFPP/ContinuousBall.lean:62:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Checking BFPP/FSpaceNecessary.lean
+Checking BFPP/Deficits.lean
+BFPP/Deficits.lean:30:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/Deficits.lean:38:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Deficits.lean:39:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/Deficits.lean:52:15: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/Deficits.lean:59:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Deficits.lean:60:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/Deficits.lean:76:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Deficits.lean:77:24: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/Deficits.lean:86:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Checking BFPP/Analysis.lean
+Checking BFPP/Regularization.lean
+BFPP/Regularization.lean:21:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Regularization.lean:22:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Regularization.lean:98:50: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/Regularization.lean:103:50: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/Regularization.lean:121:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/C0Profiles.lean
+BFPP/C0Profiles.lean:23:0: warning: automatically included section variable(s) unused in theorem `BFPP.Profile.regularize_tendsto_tail`:
+  [SuccOrder ι]
+  [TopologicalSpace ι]
+  [OrderTopology ι]
+  [CompactIccSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder ι] [TopologicalSpace ι] [OrderTopology ι] [CompactIccSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/FiniteSynthesis.lean
+BFPP/FiniteSynthesis.lean:107:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/FiniteSynthesis.lean:108:47: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+Checking BFPP/StepFunctions.lean
+BFPP/StepFunctions.lean:19:0: warning: automatically included section variable(s) unused in theorem `BFPP.initialSegment_isClopen`:
+  [OrderBot ι]
+  [CompactIccSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [OrderBot ι] [CompactIccSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/StepFunctions.lean:25:0: warning: automatically included section variable(s) unused in theorem `BFPP.initialSegment_isCompact`:
+  [SuccOrder ι]
+  [NoMaxOrder ι]
+  [OrderTopology ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder ι] [NoMaxOrder ι] [OrderTopology ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/StepFunctions.lean:47:0: warning: automatically included section variable(s) unused in theorem `BFPP.c0_abs_apply_le_norm`:
+  [LinearOrder ι]
+  [OrderBot ι]
+  [SuccOrder ι]
+  [NoMaxOrder ι]
+  [OrderTopology ι]
+  [CompactIccSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder ι] [OrderBot ι] [SuccOrder ι] [NoMaxOrder ι] [OrderTopology ι] [CompactIccSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/StepFunctions.lean:51:0: warning: automatically included section variable(s) unused in theorem `BFPP.c0_norm_le`:
+  [LinearOrder ι]
+  [OrderBot ι]
+  [SuccOrder ι]
+  [NoMaxOrder ι]
+  [OrderTopology ι]
+  [CompactIccSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder ι] [OrderBot ι] [SuccOrder ι] [NoMaxOrder ι] [OrderTopology ι] [CompactIccSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/StepAlgebra.lean
+Checking BFPP/PositiveSynthesis.lean
+BFPP/PositiveSynthesis.lean:27:0: warning: automatically included section variable(s) unused in theorem `BFPP.weightedCombination_apply`:
+  [LinearOrder ι]
+  [OrderBot ι]
+  [SuccOrder ι]
+  [NoMaxOrder ι]
+  [TopologicalSpace ι]
+  [OrderTopology ι]
+  [CompactIccSpace ι]
+  [CompactSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder
+  ι] [OrderBot
+  ι] [SuccOrder
+  ι] [NoMaxOrder ι] [TopologicalSpace ι] [OrderTopology ι] [CompactIccSpace ι] [CompactSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/PositiveSynthesis.lean:157:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/PositiveSynthesis.lean:159:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/PositiveSynthesis.lean:175:0: warning: automatically included section variable(s) unused in theorem `BFPP.positiveSynthesis_unique`:
+  [CompactSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/CenteredSynthesis.lean
+Checking BFPP/Families.lean
+Checking BFPP/Realization.lean
+BFPP/Realization.lean:35:0: warning: automatically included section variable(s) unused in theorem `BFPP.InseparablePair.positiveOutput_zero`:
+  [SuccOrder κ]
+  [NoMaxOrder κ]
+  [TopologicalSpace κ]
+  [OrderTopology κ]
+  [CompactIccSpace κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder κ] [NoMaxOrder κ] [TopologicalSpace κ] [OrderTopology κ] [CompactIccSpace κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/Realization.lean:40:0: warning: automatically included section variable(s) unused in theorem `BFPP.InseparablePair.negativeOutput_zero`:
+  [SuccOrder ι]
+  [NoMaxOrder ι]
+  [TopologicalSpace ι]
+  [OrderTopology ι]
+  [CompactIccSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder ι] [NoMaxOrder ι] [TopologicalSpace ι] [OrderTopology ι] [CompactIccSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/Realization.lean:45:0: warning: automatically included section variable(s) unused in theorem `BFPP.InseparablePair.positiveOutput_centered_bounds`:
+  [SuccOrder κ]
+  [NoMaxOrder κ]
+  [TopologicalSpace κ]
+  [OrderTopology κ]
+  [CompactIccSpace κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder κ] [NoMaxOrder κ] [TopologicalSpace κ] [OrderTopology κ] [CompactIccSpace κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/Realization.lean:50:0: warning: automatically included section variable(s) unused in theorem `BFPP.InseparablePair.negativeOutput_centered_bounds`:
+  [SuccOrder ι]
+  [NoMaxOrder ι]
+  [TopologicalSpace ι]
+  [OrderTopology ι]
+  [CompactIccSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder ι] [NoMaxOrder ι] [TopologicalSpace ι] [OrderTopology ι] [CompactIccSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/Realization.lean:77:0: warning: automatically included section variable(s) unused in theorem `BFPP.InseparablePair.positiveOutput_centered_dist`:
+  [SuccOrder κ]
+  [NoMaxOrder κ]
+  [TopologicalSpace κ]
+  [OrderTopology κ]
+  [CompactIccSpace κ]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder κ] [NoMaxOrder κ] [TopologicalSpace κ] [OrderTopology κ] [CompactIccSpace κ] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/Realization.lean:85:0: warning: automatically included section variable(s) unused in theorem `BFPP.InseparablePair.negativeOutput_centered_dist`:
+  [SuccOrder ι]
+  [NoMaxOrder ι]
+  [TopologicalSpace ι]
+  [OrderTopology ι]
+  [CompactIccSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [SuccOrder ι] [NoMaxOrder ι] [TopologicalSpace ι] [OrderTopology ι] [CompactIccSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/OrdinalIndex.lean
+Checking BFPP/Cozero.lean
+Checking BFPP/SaturatedChains.lean
+Checking BFPP/SignExtension.lean
+BFPP/SignExtension.lean:41:0: warning: automatically included section variable(s) unused in theorem `BFPP.IsFSpace.disjoint_sign_closures`:
+  [CompactSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/Hartogs.lean
+BFPP/Hartogs.lean:16:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/SignRecursion.lean
+BFPP/SignRecursion.lean:59:33: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/SignRecursion.lean:59:45: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/SignRecursion.lean:59:57: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+BFPP/SignRecursion.lean:67:44: warning: `Ordinal.lt_one_iff_zero` has been deprecated: Use `Order.lt_one_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Type u_1} {x : α} [inst : LinearOrder α] [inst_1 : AddMonoidWithOne α] [SuccAddOrder α] [IsBotZeroClass α]
+    [NeZero 1], x < 1 ↔ x = 0
+instead of
+  ∀ {a : Ordinal.{u_1}}, a < 1 ↔ a = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.lt_one_iff_zero` to `lt_one_iff x`).
+BFPP/SignRecursion.lean:79:44: warning: `Ordinal.lt_one_iff_zero` has been deprecated: Use `Order.lt_one_iff` instead
+
+Note: The updated constant has a different type:
+  ∀ {α : Type u_1} {x : α} [inst : LinearOrder α] [inst_1 : AddMonoidWithOne α] [SuccAddOrder α] [IsBotZeroClass α]
+    [NeZero 1], x < 1 ↔ x = 0
+instead of
+  ∀ {a : Ordinal.{u_1}}, a < 1 ↔ a = 0
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.lt_one_iff_zero` to `lt_one_iff x`).
+Checking BFPP/SignTermination.lean
+BFPP/SignTermination.lean:43:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Checking BFPP/SignRealization.lean
+BFPP/SignRealization.lean:39:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/SignRealization.lean:53:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+BFPP/SignRealization.lean:42:0: warning: automatically included section variable(s) unused in theorem `BFPP.exists_clopenInseparable_of_not_totallySeparated`:
+  [CompactSpace K]
+  [NormalSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace K] [NormalSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/ChainCompleteness.lean
+Checking BFPP/BooleanGap.lean
+Checking BFPP/CofinalSequences.lean
+BFPP/CofinalSequences.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/CofinalSequences.lean:28:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/CofinalSequences.lean:29:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/CofinalSequences.lean:35:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/CofinalSequences.lean:36:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/CofinalSequences.lean:71:20: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/CofinalSequences.lean:76:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/CofinalSequences.lean:76:32: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/CofinalSequences.lean:83:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+Checking BFPP/IndexedGaps.lean
+BFPP/IndexedGaps.lean:62:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/IndexedGaps.lean:63:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/ClopenCompleteness.lean
+Checking BFPP/ClopenPairs.lean
+BFPP/ClopenPairs.lean:33:35: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/ClopenPairs.lean:81:12: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/ClopenPairs.lean:99:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/ClopenPairs.lean:100:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/CofinalReindexing.lean
+Checking BFPP/Necessity.lean
+BFPP/Necessity.lean:15:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/EDSupremum.lean
+BFPP/EDSupremum.lean:23:0: warning: automatically included section variable(s) unused in theorem `BFPP.edCut_antitone`:
+  [ExtremallyDisconnected K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ExtremallyDisconnected K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/EDSupremum.lean:33:0: warning: automatically included section variable(s) unused in theorem `BFPP.edSupValues_nonempty`:
+  [ExtremallyDisconnected K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ExtremallyDisconnected K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/EDSupremum.lean:36:0: warning: automatically included section variable(s) unused in theorem `BFPP.edSupValues_bddAbove`:
+  [ExtremallyDisconnected K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [ExtremallyDisconnected K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/BallOrderGeometry.lean
+Checking BFPP/InvariantIntervals.lean
+Checking BFPP/LatticeFixedPoint.lean
+Checking BFPP/Characterization.lean
+BFPP/Characterization.lean:15:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/Characterization.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/OrdinalCofinality.lean
+BFPP/OrdinalCofinality.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/OrdinalCofinality.lean:31:20: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/OrdinalCofinality.lean:36:21: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/OrdinalCofinality.lean:36:32: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/OrdinalCofinality.lean:43:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/OrdinalCofinality.lean:58:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/OrdinalCofinality.lean:61:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/CountablePairs.lean
+BFPP/CountablePairs.lean:18:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/RegularPairs.lean
+BFPP/RegularPairs.lean:31:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/RegularPairs.lean:34:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/RegularPairs.lean:35:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/RegularPairs.lean:50:0: warning: automatically included section variable(s) unused in theorem `BFPP.RegularOrdinalPair.length_isLimit`:
+  [CompactSpace K]
+  [T2Space K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace K] [T2Space K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/RegularPairs.lean:55:0: warning: automatically included section variable(s) unused in theorem `BFPP.RegularOrdinalPair.length_regular`:
+  [CompactSpace K]
+  [T2Space K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompactSpace K] [T2Space K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/RegularPairs.lean:79:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/RegularPairs.lean:80:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/RegularPairs.lean:81:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/RegularPairs.lean:82:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/RegularPairs.lean:72:0: warning: automatically included section variable(s) unused in theorem `BFPP.RegularOrdinalPair.length_uncountable`:
+  [T2Space K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [T2Space K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/OrdinalPairs.lean
+Checking BFPP/ProfileExtension.lean
+BFPP/ProfileExtension.lean:18:0: warning: automatically included section variable(s) unused in theorem `BFPP.Profile.extendValue_bounds`:
+  hκ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hκ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/ProfileExtension.lean:26:0: warning: automatically included section variable(s) unused in theorem `BFPP.Profile.extendValue_le_tail`:
+  hκ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hκ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/ProfileExtension.lean:41:17: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+BFPP/ProfileExtension.lean:41:29: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+BFPP/ProfileExtension.lean:43:17: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+BFPP/ProfileExtension.lean:43:29: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+BFPP/ProfileExtension.lean:46:15: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+BFPP/ProfileExtension.lean:46:27: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+BFPP/ProfileExtension.lean:34:0: warning: automatically included section variable(s) unused in theorem `BFPP.Profile.extendValue_monotone`:
+  hκ
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hκ in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/ProfileExtension.lean:57:6: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+BFPP/ProfileExtension.lean:49:26: warning: Variable name `hρκ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hρκ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+BFPP/ProfileExtension.lean:66:40: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+BFPP/ProfileExtension.lean:71:40: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+BFPP/ProfileExtension.lean:118:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/ExtensionDelay.lean
+BFPP/ExtensionDelay.lean:16:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/ExtensionDelay.lean:25:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/ExtensionDelay.lean:26:20: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/ExtensionDelay.lean:34:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/Interleaving.lean
+BFPP/Interleaving.lean:73:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/TwoProfileStructure.lean
+BFPP/TwoProfileStructure.lean:14:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/EncodedDomain.lean
+BFPP/EncodedDomain.lean:66:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/EnvelopeOrder.lean
+BFPP/EnvelopeOrder.lean:22:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/EnvelopeOrder.lean:27:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/InterleavingEnvelopes.lean
+Checking BFPP/ProfileRestriction.lean
+BFPP/ProfileRestriction.lean:52:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/EncodedMaps.lean
+Checking BFPP/PrefixFactorization.lean
+Checking BFPP/TransfinitePropagator.lean
+BFPP/TransfinitePropagator.lean:59:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/DelayPrefixBound.lean
+BFPP/DelayPrefixBound.lean:17:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/DelayPrefixBound.lean:18:20: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/DelayPrefixBound.lean:18:43: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+Checking BFPP/EncodedRecurrence.lean
+BFPP/EncodedRecurrence.lean:35:73: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+BFPP/EncodedRecurrence.lean:50:73: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/EncodedRecurrence.lean:69:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/MainTransfinite.lean
+BFPP/MainTransfinite.lean:25:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/MainTransfinite.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/MainTransfinite.lean:27:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/EncodedRules.lean
+BFPP/EncodedRules.lean:38:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/ComplexBall.lean
+Checking BFPP/SynthesisMeasure.lean
+BFPP/SynthesisMeasure.lean:31:49: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+BFPP/SynthesisMeasure.lean:33:8: warning: automatically included section variable(s) unused in theorem `BFPP.initialStepCompact_toC0`:
+  [MeasurableSpace ι]
+  [BorelSpace ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [MeasurableSpace ι] [BorelSpace ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/SynthesisMeasure.lean:86:75: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+Checking BFPP/SynthesisIntegral.lean
+Checking BFPP/PointwiseSupremum.lean
+Checking BFPP/PointwisePrefixes.lean
+Checking BFPP/TerminalSupremum.lean
+BFPP/TerminalSupremum.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/TerminalNormalization.lean
+BFPP/TerminalNormalization.lean:35:8: warning: automatically included section variable(s) unused in theorem `BFPP.normalizedTerminal_apply`:
+  [TopologicalSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+BFPP/TerminalNormalization.lean:41:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP.lean
+Checking Audit.lean
+'BFPP.contractive_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.BoundedFamily.supremum_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.upperEnvelope_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.subsolution_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.tail_mix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.twoProfileSet_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.twoProfileSet_isBounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.twoProfileSet_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.TwoProfile.fixedPointFree_delay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.isFSpace_of_hasBFPP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparableLevels.analyze_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparableLevels.contractive_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.regularizeValue_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.positiveTail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.center_add_positiveTail_dist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.finite_synthesis_bounds_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.stepCombination_denseRange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.positiveSynthesis_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.positiveSynthesis_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.centeredSynthesis_dist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.synthesize_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.analyze_synthesize_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.ballMap_fixedPointFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.not_hasBFPP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.countable_union_cozero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_first_bad_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.not_hasBFPP_of_not_totallySeparated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_chainGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_regular_cofinal_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.not_hasBFPP_of_zeroDimensional_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.extremallyDisconnected_of_hasBFPP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_nonexpansive_fixedPointFree_of_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.edSup_isLUB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_minimal_invariant_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.fixedPoint_of_interval_balls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.hasBFPP_iff_extremallyDisconnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.IsTCP.nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.encodedPropagator_isTCP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_transfinite_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_complex_fixedPointFree_of_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.positiveSynthesis_measure_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.synthesisMeasure_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_terminal_pointwise_supremum_of_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.normalizedTerminal_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.normalizedTerminal_not_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_normalized_terminal_supremum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.synthesizeMap_convexIntegral_max_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.synthesisMass_add_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.hasBFPP_iff_all_closedBalls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.discrete_recurrence_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed for 988 declarations in namespace BFPP.
+All listed modules and the axiom audit checked successfully.
+Checking BFPP/NormalizedAppendix.lean
+BFPP/NormalizedAppendix.lean:28:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+BFPP/NormalizedAppendix.lean:54:4: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+Checking BFPP/ConvexIntegral.lean
+Checking BFPP/BallScaling.lean
+BFPP/BallScaling.lean:90:0: warning: automatically included section variable(s) unused in theorem `BFPP.closedBall_negative_empty`:
+  [NormedSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Checking BFPP/DiscretePropagation.lean
+Checking BFPP.lean
+Checking Audit.lean
+'BFPP.contractive_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.BoundedFamily.supremum_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.upperEnvelope_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.subsolution_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.tail_mix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.twoProfileSet_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.twoProfileSet_isBounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.twoProfileSet_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.TwoProfile.fixedPointFree_delay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.isFSpace_of_hasBFPP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparableLevels.analyze_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparableLevels.contractive_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.regularizeValue_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.positiveTail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.Profile.center_add_positiveTail_dist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.finite_synthesis_bounds_finset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.stepCombination_denseRange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.positiveSynthesis_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.positiveSynthesis_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.centeredSynthesis_dist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.synthesize_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.analyze_synthesize_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.ballMap_fixedPointFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.not_hasBFPP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.countable_union_cozero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_first_bad_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.not_hasBFPP_of_not_totallySeparated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_chainGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_regular_cofinal_sequence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.not_hasBFPP_of_zeroDimensional_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.extremallyDisconnected_of_hasBFPP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_nonexpansive_fixedPointFree_of_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.edSup_isLUB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_minimal_invariant_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.fixedPoint_of_interval_balls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.hasBFPP_iff_extremallyDisconnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.IsTCP.nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.encodedPropagator_isTCP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_transfinite_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_complex_fixedPointFree_of_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.positiveSynthesis_measure_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.synthesisMeasure_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_terminal_pointwise_supremum_of_not_ED' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.normalizedTerminal_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.normalizedTerminal_not_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.exists_normalized_terminal_supremum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.synthesizeMap_convexIntegral_max_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.InseparablePair.synthesisMass_add_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.hasBFPP_iff_all_closedBalls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BFPP.discrete_recurrence_nonexpansive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom audit passed for 988 declarations in namespace BFPP.
+Final supporting modules, aggregate import, and axiom audit checked successfully.
