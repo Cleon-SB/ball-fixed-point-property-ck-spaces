@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="description" content="A companion to Cleon S. Barroso’s paper on the ball fixed point property in C(K), with Lean statements, sources and verification records.">
+<meta name="color-scheme" content="light"><title>Definitions · BFPP</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<script defer src="site.js"></script></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html">
+<span class="mark" aria-hidden="true">B</span><span><strong>Transfinite propagation</strong><small>Paper &amp; Lean formalization</small></span></a>
+<nav aria-label="Main navigation"><a href="index.html">Results</a><a href="definitions.html" aria-current="page">Definitions</a><a href="paper.html">Paper</a><a href="verification.html">Verification</a></nav></div></header>
+<main id="main"><section class="hero"><p class="eyebrow">A guide to the notation</p><h1>Definitions, from the paper to Lean</h1>
+<p class="lede">The closed unit ball, the topology of <span class="math">K</span>, and the coefficient space enter through separate definitions. The excerpts below are taken directly from the Lean source files.</p></section><section class="definition" id="ball"><h2>The closed unit ball</h2><div class="definition-grid">
+<div class="description"><p><span class="math">B<sub>X</sub> = {x ∈ X : ‖x‖ ≤ 1}</span> carries the metric inherited from the ambient normed space. The Lean subtype includes the norm bound with each point, so a self-map of <code>UnitBall X</code> already has the correct domain and range.</p></div><div><div class="codebox"><div class="codebar"><span>Lean definition</span>
+<button class="copy" data-copy="UnitBall" aria-label="Copy UnitBall">Copy</button></div>
+<pre><code id="UnitBall">abbrev UnitBall (X : Type u) [SeminormedAddCommGroup X] := {x : X // ‖x‖ ≤ 1}</code></pre>
+<div class="codefoot"><a href="source/Transfer.lean.html#L78">Full source &amp; proof ↗</a>
+<a href="source/Transfer.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; universe u</code></p></div></div></section><section class="definition" id="bfpp"><h2>The ball fixed point property</h2><div class="definition-grid">
+<div class="description"><p>Every nonexpansive self-map of the closed unit ball has a fixed point. <code>LipschitzWith 1 T</code> means that distances do not increase.</p><p>The equivalent formulation for all closed balls, including radius zero, is proved in <a href="source/BallScaling.lean.html">BallScaling.lean</a>.</p></div><div><div class="codebox"><div class="codebar"><span>Lean definition</span>
+<button class="copy" data-copy="HasBFPP" aria-label="Copy HasBFPP">Copy</button></div>
+<pre><code id="HasBFPP">def HasBFPP (X : Type u) [SeminormedAddCommGroup X] : Prop :=
+  ∀ T : UnitBall X → UnitBall X, LipschitzWith 1 T → ∃ x, T x = x</code></pre>
+<div class="codefoot"><a href="source/Transfer.lean.html#L81">Full source &amp; proof ↗</a>
+<a href="source/Transfer.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; universe u</code></p></div></div></section><section class="definition" id="fspace"><h2>Compact F-spaces</h2><div class="definition-grid">
+<div class="description"><p>For compact Hausdorff spaces, the formulation used here says that disjoint cozero sets have disjoint closures. A cozero set is the set where a continuous real function is nonzero.</p><p>The separate condition <code>ExtremallyDisconnected K</code> comes from mathlib: closures of open sets are open.</p></div><div><div class="codebox"><div class="codebar"><span>Lean definition</span>
+<button class="copy" data-copy="IsFSpace" aria-label="Copy IsFSpace">Copy</button></div>
+<pre><code id="IsFSpace">def IsFSpace (K : Type u) [TopologicalSpace K] : Prop :=
+  ∀ f g : C(K, ℝ), Disjoint {t | f t ≠ 0} {t | g t ≠ 0} →
+    Disjoint (closure {t | f t ≠ 0}) (closure {t | g t ≠ 0})</code></pre>
+<div class="codefoot"><a href="source/FSpaceNecessary.lean.html#L17">Full source &amp; proof ↗</a>
+<a href="source/FSpaceNecessary.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; open Set; universe u</code></p></div></div></section><section class="definition" id="coefficients"><h2>Bounded coefficient families</h2><div class="definition-grid">
+<div class="description"><p>The coefficient space is ℓ∞ on an index set, with the supremum norm. Giving the index set the discrete topology makes every function continuous; boundedness remains part of mathlib’s <code>BoundedContinuousFunction</code> structure.</p><p>This choice has no effect on the topology of <span class="math">K</span>. The ordinal spaces used for C₀ synthesis carry their order topology separately.</p></div><div><div class="codebox"><div class="codebar"><span>Lean definition</span>
+<button class="copy" data-copy="BoundedFamily" aria-label="Copy BoundedFamily">Copy</button></div>
+<pre><code id="BoundedFamily">abbrev BoundedFamily (ι : Type u) :=
+  @BoundedContinuousFunction ι ℝ ⊥ inferInstance</code></pre>
+<div class="codefoot"><a href="source/BoundedFamilies.lean.html#L20">Full source &amp; proof ↗</a>
+<a href="source/BoundedFamilies.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; universe u</code></p></div></div></section><section class="definition" id="ordinals"><h2>An ordinal as an index set</h2><div class="definition-grid">
+<div class="description"><p><code>OrdinalIndex κ</code> is the type of ordinals strictly below <span class="math">κ</span>. Thus a coefficient family has one coordinate for each stage of the transfinite recurrence.</p></div><div><div class="codebox"><div class="codebar"><span>Lean definition</span>
+<button class="copy" data-copy="OrdinalIndex" aria-label="Copy OrdinalIndex">Copy</button></div>
+<pre><code id="OrdinalIndex">abbrev OrdinalIndex (τ : Ordinal.{u}) := Set.Iio τ</code></pre>
+<div class="codefoot"><a href="source/OrdinalIndex.lean.html#L15">Full source &amp; proof ↗</a>
+<a href="source/OrdinalIndex.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; universe u</code></p></div></div></section><section class="definition" id="tcp"><h2>A transfinite contractive propagator</h2><div class="definition-grid">
+<div class="description"><p>A map <span class="math">𝒫 : 𝒟 → 𝒟</span> is governed by its earlier coordinates:</p>
+<ul><li>The initial output coordinate is constant.</li><li>At each successor, the output is a nonexpansive function of the input prefix that actually occurs in <span class="math">𝒟</span>.</li><li>At each nonzero limit, the output is the upper or lower tail envelope of that prefix; the choice is fixed independently of the input.</li></ul>
+<p><code>inputPrefix</code> restricts a family to the earlier coordinates, and <code>prefixLift</code> regards that prefix as a member of the actual range. <code>IsSuccLimit</code> is Lean’s nonzero limit condition.</p>
+<p>These local rules imply global nonexpansiveness, proved by <code>IsTCP.nonexpansive</code> in the same module. Excluding fixed points requires the additional comparison argument.</p></div><div><div class="codebox"><div class="codebar"><span>Lean definition</span>
+<button class="copy" data-copy="IsTCP" aria-label="Copy IsTCP">Copy</button></div>
+<pre><code id="IsTCP">structure IsTCP (D : Set (BoundedFamily (OrdinalIndex κ))) (P : D → D) : Prop where
+  positive : 0 &lt; κ
+  nonempty : D.Nonempty
+  at_zero : ∃ c : ℝ, ∀ x, (P x).val ⟨0, positive⟩ = c
+  successor_rules : ∀ i : OrdinalIndex κ, i.val ∈ range (Order.succ : Ordinal.{u} → Ordinal.{u}) →
+    ∃ Φ : range (inputPrefix D i) → ℝ, LipschitzWith 1 Φ ∧
+      ∀ x, Φ (prefixLift D i x) = (P x).val i
+  limit_rules : ∀ i : OrdinalIndex κ, IsSuccLimit i.val →
+    ∃ ε : Bool, ∀ x, (P x).val i =
+      if ε then upperEnvelope (inputPrefix D i x) else lowerEnvelope (inputPrefix D i x)</code></pre>
+<div class="codefoot"><a href="source/TransfinitePropagator.lean.html#L22">Full source &amp; proof ↗</a>
+<a href="source/TransfinitePropagator.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; open Set Order; universe u; κ : Ordinal.{u}</code></p></div></div></section><section class="prose"><h2>Further definitions</h2><p>The <a href="source/Envelopes.lean.html">tail envelopes</a>, <a href="source/Profiles.lean.html">profiles and delay</a>, and <a href="source/TwoProfiles.lean.html">two-profile domain</a> are available with their full proofs in the source browser.</p></section></main>
+<footer class="footer"><span>Cleon S. Barroso · Federal University of Ceará</span>
+<span>Local review edition · <a href="source/index.html">Lean sources</a> · <a href="verification.html#scope">Verification scope</a></span></footer>
+<div id="copy-status" class="status" role="status" aria-live="polite"></div></body></html>

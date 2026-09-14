@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="description" content="A companion to Cleon S. Barroso’s paper on the ball fixed point property in C(K), with Lean statements, sources and verification records.">
+<meta name="color-scheme" content="light"><title>Results · BFPP</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<script defer src="site.js"></script></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html">
+<span class="mark" aria-hidden="true">B</span><span><strong>Transfinite propagation</strong><small>Paper &amp; Lean formalization</small></span></a>
+<nav aria-label="Main navigation"><a href="index.html" aria-current="page">Results</a><a href="definitions.html">Definitions</a><a href="paper.html">Paper</a><a href="verification.html">Verification</a></nav></div></header>
+<main id="main"><section class="hero"><p class="eyebrow">Functional analysis · Topology · Formal proof</p>
+<h1>Transfinite contractive propagation and the ball fixed point property in <span class="math">C(K)</span></h1>
+<p class="author">Cleon S. Barroso<span>Federal University of Ceará</span></p>
+<p class="lede">Which compact Hausdorff spaces <span class="math">K</span> ensure that every nonexpansive self-map of the closed unit ball of <span class="math">C(K, ℝ)</span> has a fixed point? This paper proves that they are exactly the extremally disconnected spaces.</p>
+<p class="small">Explore the main results alongside their Lean statements, or download the manuscript and its formalization.</p>
+<div class="actions"><a class="button primary" href="downloads/csb-BFPP-JFA.pdf">Read the paper <span aria-hidden="true">↗</span></a>
+<a class="button" href="downloads/BFPPFormalization-mathlib.zip" download>Download Lean project</a>
+<a class="quiet" href="verification.html">Verification record →</a></div></section>
+<nav class="jump" aria-label="Results on this page"><a href="#characterization">Characterization</a><a href="#transfinite">Transfinite realization</a><a href="#complex">Complex extension</a><a href="#idea">Proof idea</a></nav><section class="result" id="characterization"><div class="section-top"><h2>The ball fixed point characterization</h2>
+<span class="reference">Theorem 1.2 · Corollary 5.4</span></div><div class="result-grid">
+<div><p class="label">Mathematical statement</p><div class="statement"><p>Let <span class="math">K</span> be a compact Hausdorff space. The real Banach space <span class="math">C(K)</span> has the ball fixed point property if and only if <span class="math">K</span> is extremally disconnected.</p>
+<div class="formula"><span class="math">C(K, ℝ)</span> has BFPP<br>⟺<br><span class="math">K</span> is extremally disconnected.</div>
+<p class="note">Here BFPP concerns every nonexpansive self-map of the <em>whole closed unit ball</em>, equipped with the supremum norm. Extremal disconnectedness means that the closure of every open set is open.</p></div></div><div><div class="codebox"><div class="codebar"><span>Lean statement · proof omitted</span>
+<button class="copy" data-copy="hasBFPP_iff_extremallyDisconnected" aria-label="Copy hasBFPP_iff_extremallyDisconnected">Copy</button></div>
+<pre><code id="hasBFPP_iff_extremallyDisconnected">theorem hasBFPP_iff_extremallyDisconnected [T2Space K] :
+    HasBFPP C(K, ℝ) ↔ ExtremallyDisconnected K</code></pre>
+<div class="codefoot"><a href="source/Characterization.lean.html#L22">Full source &amp; proof ↗</a>
+<a href="source/Characterization.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; K : Type*; [TopologicalSpace K] [CompactSpace K]</code></p></div></div>
+<details><summary>Read the Lean statement</summary><div class="explanation"><p><code>[CompactSpace K]</code> is supplied by the surrounding context, and <code>[T2Space K]</code> expresses the Hausdorff assumption. <code>C(K, ℝ)</code> is mathlib’s space of real continuous functions with its supremum norm.</p>
+<p><a href="definitions.html#bfpp"><code>HasBFPP</code></a> quantifies over all maps of the closed unit ball and all proofs that their Lipschitz constant is at most one. The symbol <code>↔</code> records both implications. The proof of the extremally disconnected case is included in the project, using lattice suprema and invariant intervals.</p></div></details></section><section class="result" id="transfinite"><div class="section-top"><h2>A transfinite fixed point obstruction</h2>
+<span class="reference">Theorem 5.2</span></div><div class="result-grid">
+<div><p class="label">Mathematical statement</p><div class="statement"><p>Suppose that <span class="math">K</span> is a compact Hausdorff <span class="math">F</span>-space which is not extremally disconnected. There are an uncountable regular initial ordinal <span class="math">κ</span>, a nonempty closed bounded convex set</p>
+<div class="formula"><span class="math">𝒟 ⊂ ℓ</span><sub>∞</sub><span class="math">(κ)</span>,</div>
+<p>and nonexpansive maps</p><div class="formula"><span class="math">𝒜 : B</span><sub>C(K, ℝ)</sub><span class="math"> → 𝒟</span>,<br><span class="math">𝒥 : 𝒟 → B</span><sub>C(K, ℝ)</sub>,<br><span class="math">𝒫 : 𝒟 → 𝒟</span>,</div>
+<p>such that <span class="math">𝒫</span> is a transfinite contractive propagator and both <span class="math">𝒜 ∘ 𝒥 ∘ 𝒫</span> and <span class="math">T = 𝒥 ∘ 𝒫 ∘ 𝒜</span> have no fixed points.</p></div></div><div><div class="codebox"><div class="codebar"><span>Lean statement · proof omitted</span>
+<button class="copy" data-copy="exists_transfinite_realization" aria-label="Copy exists_transfinite_realization">Copy</button></div>
+<pre><code id="exists_transfinite_realization">theorem exists_transfinite_realization (hF : IsFSpace K) (hED : ¬ ExtremallyDisconnected K) :
+    ∃ κ : Ordinal.{u}, κ.card.ord = κ ∧ κ.card.IsRegular ∧ ℵ₀ &lt; κ.card ∧
+      ∃ D : Set (BoundedFamily (OrdinalIndex κ)),
+        D.Nonempty ∧ IsClosed D ∧ Bornology.IsBounded D ∧ Convex ℝ D ∧
+        ∃ (A : UnitBall C(K, ℝ) → D) (J : D → UnitBall C(K, ℝ)) (P : D → D),
+          LipschitzWith 1 A ∧ LipschitzWith 1 J ∧ LipschitzWith 1 P ∧ IsTCP D P ∧
+          (∀ z, A (J (P z)) ≠ z) ∧
+          LipschitzWith 1 (fun f =&gt; J (P (A f))) ∧ (∀ f, J (P (A f)) ≠ f)</code></pre>
+<div class="codefoot"><a href="source/MainTransfinite.lean.html#L16">Full source &amp; proof ↗</a>
+<a href="source/MainTransfinite.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; open Set Order Cardinal; universe u; K : Type u; [TopologicalSpace K] [CompactSpace K] [T2Space K]</code></p></div></div>
+<details><summary>Read the Lean statement</summary><div class="explanation"><p>The only topological hypotheses beyond compactness and Hausdorffness are <code>hF : IsFSpace K</code> and <code>hED : ¬ ExtremallyDisconnected K</code>. The domain and all three maps are constructed in the conclusion.</p>
+<ul><li><code>κ.card.ord = κ</code> says that the ordinal is initial; <code>κ.card.IsRegular</code> asserts regularity; <code>ℵ₀ &lt; κ.card</code> asserts uncountability.</li>
+<li><code>D.Nonempty</code>, <code>IsClosed D</code>, <code>Bornology.IsBounded D</code>, and <code>Convex ℝ D</code> state the four required properties of the coefficient domain.</li>
+<li><a href="definitions.html#tcp"><code>IsTCP D P</code></a> requires a constant initial coordinate, nonexpansive rules on actual successor prefixes, and an upper or lower envelope at every nonzero limit.</li>
+<li><code>∀ z, A (J (P z)) ≠ z</code> excludes coefficient fixed points. The last line independently records nonexpansiveness and the absence of fixed points on the whole unit ball.</li></ul>
+<p><code>BoundedFamily (OrdinalIndex κ)</code> realizes ℓ∞(κ). The discrete topology in this definition applies only to the coefficient index set; the topology of <span class="math">K</span> remains arbitrary under the stated assumptions.</p></div></details></section><section class="result" id="complex"><div class="section-top"><h2>The obstruction also acts on the complex ball</h2>
+<span class="reference">Remark 5.5</span></div><div class="result-grid">
+<div><p class="label">Mathematical statement</p><div class="statement"><p>For every compact Hausdorff space <span class="math">K</span> which is not extremally disconnected, there exists a fixed-point-free nonexpansive map</p>
+<div class="formula"><span class="math">S : B</span><sub>C(K, ℂ)</sub><span class="math"> → B</span><sub>C(K, ℂ)</sub>.</div>
+<p class="note">The construction takes real parts, applies the real map, and includes its output in the complex space. This result is the non-extremally-disconnected implication for complex scalars.</p></div></div><div><div class="codebox"><div class="codebar"><span>Lean statement · proof omitted</span>
+<button class="copy" data-copy="exists_complex_fixedPointFree_of_not_ED" aria-label="Copy exists_complex_fixedPointFree_of_not_ED">Copy</button></div>
+<pre><code id="exists_complex_fixedPointFree_of_not_ED">theorem exists_complex_fixedPointFree_of_not_ED [T2Space K] (hK : ¬ ExtremallyDisconnected K) :
+    ∃ S : UnitBall C(K, ℂ) → UnitBall C(K, ℂ), LipschitzWith 1 S ∧ ∀ f, S f ≠ f</code></pre>
+<div class="codefoot"><a href="source/ComplexBall.lean.html#L71">Full source &amp; proof ↗</a>
+<a href="source/ComplexBall.lean" download>Download .lean</a></div></div><p class="context">Context: <code>namespace BFPP; universe u; K : Type u; [TopologicalSpace K] [CompactSpace K]</code></p></div></div>
+<details><summary>Read the Lean statement</summary><div class="explanation"><p>The theorem assumes <code>¬ ExtremallyDisconnected K</code> and returns an actual map <code>S</code>. The real-part map is nonexpansive, and the inclusion of real functions is isometric. A fixed point of their composite would give a fixed point of the real construction.</p>
+<p>The equivalence displayed in the first result is a statement about <code>C(K, ℝ)</code>. The complex theorem displayed here makes only the implication written in its conclusion.</p></div></details></section><section class="prose" id="idea"><p class="eyebrow">Inside the construction</p><h2>Separate the metric estimate from the obstruction</h2>
+<p>The discrete recurrence in Subsection 1.2 of the paper provides the starting point:</p>
+<div class="formula"><span class="math">𝒮</span><sub>n+1</sub><span class="math">(x) = a</span><sub>n</sub><span class="math">𝒮</span><sub>n</sub><span class="math">(x) + b</span><sub>n</sub><span class="math">g</span><sub>n</sub><span class="math">(x) + c</span><sub>n</sub>.</div>
+<p>Its transfinite counterpart combines rules at successor ordinals with tail envelopes at limit ordinals. The proof first builds a two-profile domain with a successor–limit delay. The delay preserves the tail constraint, but no admissible pair is a subsolution.</p>
+<div class="scheme" aria-label="The unit ball maps to the profile domain by analysis, then to itself by propagation, and back to the ball by synthesis"><span>B<sub>C(K, ℝ)</sub></span><span class="arrow"><small>𝒜</small>→</span><span>𝒟</span><span class="arrow"><small>𝒫</small>→</span><span>𝒟</span><span class="arrow"><small>𝒥</small>→</span><span>B<sub>C(K, ℝ)</sub></span></div>
+<p>Analysis detects boundary deficits. Synthesis uses positive operators on ordinal C₀-spaces and a shared center. In the two-profile model, the comparison inequality 𝒜𝒥z ≤ z turns a hypothetical fixed point into a forbidden subsolution. An affine isometric encoding then places the construction on a single ordinal.</p>
+<p>The necessary topological families come from a Boolean gap in the zero-dimensional case, and from transfinite sign extension in the remaining case. The <span class="math">F</span>-space condition forces the cofinal lengths to be uncountable.</p>
+<div class="actions"><a href="definitions.html">Read the definitions →</a><a href="verification.html#correspondence">Follow the proof through the modules →</a></div></section></main>
+<footer class="footer"><span>Cleon S. Barroso · Federal University of Ceará</span>
+<span>Local review edition · <a href="source/index.html">Lean sources</a> · <a href="verification.html#scope">Verification scope</a></span></footer>
+<div id="copy-status" class="status" role="status" aria-live="polite"></div></body></html>
