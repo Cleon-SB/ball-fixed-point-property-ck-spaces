@@ -1,9 +1,18 @@
 # Transfinite propagation and the BFPP of C(K)
 
-Lean formalization of the mathematical results in `csb-BFPP-JFA.tex`, using
+Lean formalization of the mathematical results in `csb-BFPPCKsps-FV.tex`, using
 mathlib as its only library dependency, in 73 mathematical modules.
 See [COVERAGE.md](COVERAGE.md) for the
 paper-to-theorem correspondence and differences in proof organization.
+
+Current manuscript: `csb-BFPPCKsps-FV.tex` (928 lines), synchronized on
+2026-09-14. Source SHA-256:
+`feefe0f1af582753d5b22ada4baa01e87b1c1533706f47cd02d4c3c1b8ddc5ca`.
+The corresponding PDF and LaTeX source are in the repository's `docs/downloads`
+directory. The website's paper page links to this version. The latest revision
+adds the author's Lean formalization paragraph; the mathematical statements,
+proofs, and all Lean source files are unchanged. See `VALIDATION.md` for the
+editorial comparison and the scope of the original verification.
 
 The principal results are:
 

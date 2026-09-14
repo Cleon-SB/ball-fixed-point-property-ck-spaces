@@ -1,7 +1,7 @@
 # Paper-to-Lean correspondence
 
-Current target: `outputs/csb-review/csb-BFPP-JFA.tex` (918 lines).
-SHA-256: `a56b3864237bedd10b40791938ce02e8e9b53abed842b810ca780affc1bf473d`.
+Current target: `csb-BFPPCKsps-FV.tex` (928 lines).
+SHA-256: `feefe0f1af582753d5b22ada4baa01e87b1c1533706f47cd02d4c3c1b8ddc5ca`.
 
 On 2026-09-14 the unused Appendix A (Lemma A.1 and Remark A.2) and its two
 explanatory references were removed from the manuscript. The main results
@@ -16,6 +16,13 @@ author's split display was corrected. Mathematical statements and construction
 formulas are unchanged, and all Lean source files remain unchanged. The new
 background paragraphs explain the order notions already used in the modules
 below; they introduce no additional proof assumptions.
+
+The final submission source was renamed `csb-BFPPCKsps-FV.tex` at the author's
+request. Its contents match the saved author source byte for byte. Compared
+with the previous 918-line version, it adds the Lean formalization paragraph
+and an extra blank line. All 38 statement/proof environments are identical
+modulo whitespace; the entire source is identical modulo whitespace after
+removing that added paragraph. The correspondence table below is unchanged.
 
 This map concerns mathematical results. Historical attribution, bibliographic
 priority, and journal formatting are not assertions certified by Lean.

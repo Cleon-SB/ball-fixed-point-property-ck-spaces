@@ -37,6 +37,30 @@ script, and evidence files outside the three documentation files retain
 their previous hashes. No Lean recompilation was needed or performed for
 this editorial revision; the original kernel-verification record is retained.
 
+### Final submission filename and availability paragraph (2026-09-14)
+
+The current manuscript is `csb-BFPPCKsps-FV.tex` (928 lines), SHA-256
+`feefe0f1af582753d5b22ada4baa01e87b1c1533706f47cd02d4c3c1b8ddc5ca`.
+The author requested this final filename. The source bytes match the author's
+saved `csb-BFPP-JFA.tex`; only the distributed filename changes.
+
+Compared with the 918-line version identified by hash
+`a56b3864237bedd10b40791938ce02e8e9b53abed842b810ca780affc1bf473d`,
+the source adds a Lean formalization paragraph ("is available at") and an extra
+blank line. All 38 definition, theorem, proposition, lemma, corollary, remark,
+and proof environments were compared and are identical modulo whitespace.
+Removing the new paragraph makes the complete sources identical modulo
+whitespace. The matching PDF was recompiled: 21 pages, with no warnings or
+undefined references in the final log.
+
+All 81 manifest-listed files outside README.md, COVERAGE.md, and VALIDATION.md
+retain their previous hashes, including all 75 Lean source files, both scripts,
+the dependency configuration, and the verification log. SOURCE-SHA256.txt and
+the downloadable archive were regenerated to record the documentation changes.
+No new Lean compilation or new semantic audit was performed for this editorial
+synchronization. The original verification record below remains the evidence
+for the unchanged formalization. Repository access is a separate publication step.
+
 ## Checked environment
 
 - Lean `4.34.0-rc2`, commit `6a10ac8c22beadecabdbb0919c2b50214762f91d`.
